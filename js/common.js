@@ -78,7 +78,7 @@ $(function() {
 
 			// top-slider
 				var $topSlider = $('.top-slider__carousel').slick({
-					arrows: false,
+					// arrows: false,
 					slidesToShow: 3,
 					adaptiveHeight: true,
 					responsive: [
