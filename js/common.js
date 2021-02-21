@@ -128,7 +128,7 @@ $(function() {
 				 	var scroll = $priceScroll.scrollLeft();
 					// $priceScroll.getNiceScroll(0).doScrollLeft(scroll + 100);
 					// $priceScroll.scrollLeft(scroll + 50);
-					$priceScroll.mCustomScrollbar("scrollTo",'+=100',{});
+					$priceScroll.mCustomScrollbar("scrollTo",'-=100',{});
 					// $priceScroll.getNiceScroll(0).doRailClick()
 				});
 
@@ -136,7 +136,7 @@ $(function() {
 				 	console.log('scroll button')
 				 	var scroll = $priceScroll.scrollLeft();
 						// $priceScroll.scrollLeft(scroll - 50);
-						$priceScroll.mCustomScrollbar("scrollTo",'-=100',{});
+						$priceScroll.mCustomScrollbar("scrollTo",'+=100',{});
 						// $priceScroll.getNiceScroll(0).doScrollLeft(scroll - 100);
 					});
 
@@ -179,18 +179,9 @@ $(function() {
 					dots: false,
 					arrows: false,
 					responsive: [
-						
 						{
-							breakpoint: 768,
+							breakpoint: 560,
 							settings: {
-								slidesToShow: 2,
-								arrows: true,
-							}	
-						},
-						{
-							breakpoint: 600,
-							settings: {
-								
 								slidesToShow: 1,
 								arrows: true,
 							}	
@@ -206,16 +197,8 @@ $(function() {
 					dots: false,
 					arrows: false,
 					responsive: [
-						
 						{
-							breakpoint: 768,
-							settings: {
-								slidesToShow: 2,
-								dots: true
-							}	
-						},
-						{
-							breakpoint: 600,
+							breakpoint: 560,
 							settings: {
 								slidesToShow: 1,
 								dots: true
