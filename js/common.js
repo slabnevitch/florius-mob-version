@@ -31,14 +31,14 @@ $(function() {
 
 					$currentItem.find('.acordeon-sublist')
 					.stop(true, true)
-					.slideDown();
+					.slideToggle();
 					$currentItem.siblings()
 					.find('.acordeon-sublist')
 					.stop(true, true)
 					.slideUp();
 
 					$currentItem
-						.addClass('active')
+						.toggleClass('active')
 						.siblings()
 						.removeClass('active');
 
