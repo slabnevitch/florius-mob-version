@@ -81,16 +81,21 @@ $(function() {
 					// arrows: false,
 					slidesToShow: 3,
 					adaptiveHeight: true,
+					centerMode: true,
+        	// centerPadding: '36px',
+        	arrows: false,
 					responsive: [
 		
 						{
+							// centerMode: true,
 							breakpoint: 768,
 							settings: {
 								slidesToShow: 2
 							}	
 						},
 						{
-							breakpoint: 576,
+							// centerMode: true,
+							breakpoint: 480,
 							settings: {
 								slidesToShow: 1
 
@@ -101,7 +106,7 @@ $(function() {
 		
 			// END top-slider
 
-			// nice scroll
+			// malihu-scrollbar
 				var $priceScroll = $('.price__scroll');
 				
 				if($priceScroll.length > 0){
@@ -109,50 +114,23 @@ $(function() {
 					$priceScroll.mCustomScrollbar({
 						axis:"x"
 					});
-				// 	$priceScroll.niceScroll({
-			 //          autohidemode: false,
-			 //          cursorborderradius: 0,
-			 //          // cursormaxheight: 85
-			 //          // emulatetouch: true,
-			 //          // touchbehavior: true,
-			 //          preventmultitouchscrolling: true,
-			 //          cursordragontouch: true,
-			 //           // bouncescroll: true,
-			 //           // railoffset: {top: 10},
-			 //          cursorwidth: 12
-			 //        });
-
 
 				 $('.table-scroll-arrow.forw').click(function(){
 				 	console.log('scroll button')
 				 	var scroll = $priceScroll.scrollLeft();
-					// $priceScroll.getNiceScroll(0).doScrollLeft(scroll + 100);
-					// $priceScroll.scrollLeft(scroll + 50);
 					$priceScroll.mCustomScrollbar("scrollTo",'-=100',{});
-					// $priceScroll.getNiceScroll(0).doRailClick()
+
 				});
 
 				 $('.table-scroll-arrow.back').click(function(){
 				 	console.log('scroll button')
 				 	var scroll = $priceScroll.scrollLeft();
-						// $priceScroll.scrollLeft(scroll - 50);
 						$priceScroll.mCustomScrollbar("scrollTo",'+=100',{});
-						// $priceScroll.getNiceScroll(0).doScrollLeft(scroll - 100);
 					});
-
-
-				// 	$('.nicescroll-rails-hr').appendTo($('.price__table-wrap'));
-					
-					// var $touchPrevener = $('<div></div>', {
-					// 	class: 'nicescroll-disable'
-					// })
-					// $touchPrevener.prependTo($('.nicescroll-rails-hr'));
-
-
 				}
 
 					
-			// END nice scroll
+			// END malihu-scrollbar
 
 			// table-tooltipster
 				 $('.price-table__info-icon').tooltipster({
@@ -182,6 +160,8 @@ $(function() {
 						{
 							breakpoint: 560,
 							settings: {
+								centerMode: true,
+								centerPadding: '30px',
 								slidesToShow: 1,
 								arrows: true,
 							}	
@@ -230,7 +210,7 @@ $(function() {
 				slidesToScroll: 1,
 				arrows: false,
 				dots: false,
-				autoplay: true,
+				// autoplay: true,
 				responsive: [
 
 			    {
@@ -243,7 +223,9 @@ $(function() {
 			    {
 			      breakpoint: 480,
 			      settings: {
-			        slidesToShow: 1
+			        slidesToShow: 1,
+			        centerMode: true,
+			        centerPadding: '60px',
 			      }
 			    }
 			    ]
@@ -311,6 +293,14 @@ $(function() {
 		      settings: {
 		        slidesToShow: 1,
 		        // slidesToScroll: 1
+		        adaptiveHeight: true
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        centerMode: true,
 		        adaptiveHeight: true
 		      }
 		    }
