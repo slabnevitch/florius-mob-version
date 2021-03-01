@@ -9234,6 +9234,9 @@ html.open .side-mob-menu {
     width: 100%;
     font-size: 12px;
     line-height: 12px; }
+  .doubt-button {
+    margin-left: 0;
+    margin-right: 0; }
   .portfolio {
     display: none; }
   .action-left p {
