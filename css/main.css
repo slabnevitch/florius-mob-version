@@ -9187,8 +9187,8 @@ html.open .side-mob-menu {
     width: 100%;
     max-width: none;
     padding: 11px 15px;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 11px;
+    line-height: 11px;
     font-family: "RobotoMedium", sans-serif;
     height: auto;
     font-weight: normal; }
@@ -9232,8 +9232,8 @@ html.open .side-mob-menu {
   .doubt-order,
   .doubt-button {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px; }
+    font-size: 11px;
+    line-height: 11px; }
   .portfolio {
     display: none; }
   .action-left p {
