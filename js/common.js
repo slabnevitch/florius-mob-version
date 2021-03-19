@@ -112,7 +112,8 @@ $(function() {
 				if($priceScroll.length > 0){
 					
 					$priceScroll.mCustomScrollbar({
-						axis:"x"
+						axis:"x"б
+						scrollInertia:0
 					});
 
 				 $('.table-scroll-arrow.forw').click(function(){
