@@ -112,9 +112,10 @@ $(function() {
 				if($priceScroll.length > 0){
 					
 					$priceScroll.mCustomScrollbar({
-						axis:"x"б
+						axis:"x",
 						scrollInertia:0
 					});
+
 
 				 $('.table-scroll-arrow.forw').click(function(){
 				 	console.log('scroll button')
